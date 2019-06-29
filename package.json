@@ -1,0 +1,21 @@
+{
+  "name": "HoloHotel",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=electron-packager . --overwrite --platform=darwin --arch=x64 --icon=/Users/layne/Sites/electron/assets/icons/mac/icon.icns --prune=true --out=release-builds",
+    "package-win32": "electron-packager . Holohotel --overwrite --asar=true --platform=win32 --arch=ia32 --icon=/Users/layne/Sites/electron/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"CryptoApp\"",
+    "package-win64": "electron-packager . Holohotel --overwrite --platform=win32 --arch=x64 --icon=/Users/layne/Sites/electron/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"CryptoApp\""
+  },
+  "author": "Layne Balsters",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^5.0.5",
+    "electron-packager": "^14.0.0"
+  },
+  "dependencies": {
+    "electron-tabs": "^0.9.5"
+  }
+}

@@ -1,0 +1,10 @@
+/node_modules
+.DS_Store
+/dist/*.key
+/dist/
+/build/*.key
+/build/
+/.git/*.key
+/release-builds/
+/release-builds/*.key
+LICENSE.md
