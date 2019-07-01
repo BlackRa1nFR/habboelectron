@@ -1,21 +1,56 @@
 {
-  "name": "HoloHotel",
+  "name": "ElectronClient",
+  "productName": "Holo Client",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
-  "main": "main.js",
+  "description": "A Habbo retro Electron app!",
+  "main": "src/index.js",
   "scripts": {
-    "start": "electron .",
-    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=electron-packager . --overwrite --platform=darwin --arch=x64 --icon=/Users/layne/Sites/electron/assets/icons/mac/icon.icns --prune=true --out=release-builds",
-    "package-win32": "electron-packager . Holohotel --overwrite --asar=true --platform=win32 --arch=ia32 --icon=/Users/layne/Sites/electron/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"CryptoApp\"",
-    "package-win64": "electron-packager . Holohotel --overwrite --platform=win32 --arch=x64 --icon=/Users/layne/Sites/electron/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"CryptoApp\""
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "package-win": "electron-forge package --arch=x64 --platform=win32",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
   },
-  "author": "Layne Balsters",
-  "license": "CC0-1.0",
-  "devDependencies": {
-    "electron": "^5.0.5",
-    "electron-packager": "^14.0.0"
+  "keywords": [],
+  "author": "Layne Balsters (Laynester)",
+  "license": "MIT",
+  "config": {
+    "forge": {
+      "packagerConfig": {
+        "icon": "src/icon.icns"
+      },
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin","win32"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ]
+    }
   },
   "dependencies": {
-    "electron-tabs": "^0.9.5"
+    "electron-squirrel-startup": "^1.0.0"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "6.0.0-beta.39",
+    "@electron-forge/maker-deb": "6.0.0-beta.39",
+    "@electron-forge/maker-rpm": "6.0.0-beta.39",
+    "@electron-forge/maker-squirrel": "6.0.0-beta.39",
+    "@electron-forge/maker-zip": "6.0.0-beta.39",
+    "electron": "5.0.6"
   }
 }

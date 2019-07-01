@@ -1,10 +1,4 @@
-/node_modules
+node_modules
+out/*.key
+out
 .DS_Store
-/dist/*.key
-/dist/
-/build/*.key
-/build/
-/.git/*.key
-/release-builds/
-/release-builds/*.key
-LICENSE.md
