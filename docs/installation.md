@@ -4,7 +4,7 @@ Install NodeJS [here](https://nodejs.org/en/)
 # Clone this repository
 git clone https://github.com/Laynester/habboelectron
 # Go into the repository
-cd electron-quick-start
+cd habboelectron
 # Install dependencies
 npm install
 # Run the app
