@@ -17,7 +17,7 @@ app.commandLine.appendSwitch('ppapi-flash-path', path.join(__dirname, pluginName
 app.commandLine.appendSwitch('ppapi-flash-version', pluginVersion)
 let mainWindow;
 let menuTemplate = [{
-    label: 'appMenu',
+    label: pjson.productName,
     submenu: [{
         label: 'About ' + pjson.productName,
         click: () =>
@@ -47,9 +47,11 @@ const createWindow = () => {
     });
     mainWindow.maximize()
     mainWindow.show();
-    mainWindow.removeMenu();
-    let menu = Menu.buildFromTemplate(menuTemplate);
-    Menu.setApplicationMenu(menu);
+    if(pjson.settings.hideMenu == false) {
+      let menu = Menu.buildFromTemplate(menuTemplate);
+      Menu.setApplicationMenu(menu);
+    }
+    else{mainWindow.setMenu(null)}
 };
 app.on('ready', createWindow);
 app.on('window-all-closed', () => {if (process.platform !== 'darwin') {app.quit();}});
