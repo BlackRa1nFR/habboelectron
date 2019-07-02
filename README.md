@@ -2,7 +2,7 @@
 
 The chrome alternative for Habbo Retros, uses a native flash plugin for windows 64bit systems and macOS.
 
-### USED BEST WITH A SPA SITE (Heroic(LeChris),HabboAPI(Bilsonnnnnnnnnnnnnnnnnnnnnnnnnnn.......) Chocolately)
+###### USED BEST WITH A SPA SITE (Heroic(LeChris),HabboAPI(Bilsonnnnnnnnnnnnnnnnnnnnnnnnnnn.......) Chocolately)
 
 # Docs
 
