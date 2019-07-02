@@ -1,8 +1,15 @@
 # HabboElectron
 
+The chrome alternative for Habbo Retros, uses a native flash plugin for windows 64bit systems and macOS.
+
+### USED BEST WITH A SPA SITE (Heroic(LeChris),HabboAPI(Bilsonnnnnnnnnnnnnnnnnnnnnnnnnnn.......) Chocolately)
+
 # Docs
 
-[Installation](/docs/installation.md)
+[Installation](/docs/installation.md) - How to install
+[Configuration](/docs/config.md) - Change config
+[Package](/docs/packaging.md) - How to Package
+[Icons](/docs/icons.md) - How to change icons
 
 ## Resources for Learning Electron
 
