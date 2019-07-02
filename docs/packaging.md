@@ -1,9 +1,9 @@
 # Packaging - Windows
-````bash
+```bash
 npm run package-win
 ```
 # Packaging - Mac
-````bash
+```bash
 npm run package-mac
 ```
 
