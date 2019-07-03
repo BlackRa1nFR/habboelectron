@@ -15,8 +15,8 @@
     "start": "electron-forge start",
     "package-mac": "electron-forge package --arch=x64 --platform=darwin",
     "package-win": "electron-forge package --arch=x64 --platform=win32",
-    "make": "electron-forge make",
-    "publish": "electron-forge publish",
+    "make": "electron-forge make --arch=x64 --platform=darwin && electron-forge make --arch=x64 --platform=win32",
+    "publish": "electron-forge publish --arch=x64 --platform=darwin && electron-forge publish --arch=x64 --platform=win32",
     "lint": "echo \"No linting configured\""
   },
   "keywords": [],
@@ -28,9 +28,9 @@
         "icon": "src/icon.icns"
       },
       "make_targets": {
-    "win32": ["squirrel"],
-    "darwin": ["zip", "dmg"],
-    "linux": ["deb", "rpm", "flatpak", "snap"]
+        "win32": ["squirrel"],
+        "darwin": ["zip", "dmg"],
+        "linux": ["deb", "rpm", "flatpak", "snap"]
   }
     }
   },

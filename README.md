@@ -10,6 +10,7 @@ The chrome alternative for Habbo Retros, uses a native flash plugin for windows 
 - [Configuration](/docs/config.md) - Change config
 - [Package](/docs/packaging.md) - How to Package
 - [Icons](/docs/icons.md) - How to change icons
+- [Publish](/docs/publish.md) - How to publish
 
 ## Resources for Learning Electron
 
